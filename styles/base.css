@@ -81,16 +81,18 @@ main {
 .about-me,
 .costa-rica-information {
     display: flex;
-    padding: 15px;
+    padding: px;
 }
 
 .about-me img {
     width: 200px;
     border-radius: 3px;
+    padding: 10px;
 }
 
 .costa-rica-information img {
     width: 250px;
+    padding: 10px;
 }
 
 .about-me p,
@@ -98,6 +100,7 @@ main {
     font-size: 18px;
     font-family: "Roboto Slab", serif;
     margin: 0px 5px;
+    padding: 5px;
 }
 
 h3 {
