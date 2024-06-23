@@ -5,11 +5,16 @@
     --yellow: #FFCC00; 
     --light-blue: #336699; 
     --soft-yellow: #FFF9C4;
+    --light-cyan: #e0f3ff;
 }
 
 * {
     margin: 0px;
     padding: 0px;
+}
+
+body {
+    background-color: var(--light-cyan);
 }
 
 /* Header*/
@@ -100,6 +105,10 @@ img {
     height: 80%;
     border-radius: 3px;
     box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.2);
+}
+
+img:hover {
+    box-shadow: 3px 3px 8px 4px rgba(0, 0, 0, 0.4);
 }
 
 figcaption {
