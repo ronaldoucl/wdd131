@@ -29,4 +29,14 @@
         margin: 0 auto;
         grid-template-columns: 1fr 1fr 1fr;
     }
+    nav li a {
+        font-size: 30px;
+    }
+    main h2 {
+        font-size: 40px;
+        padding: 10px;
+    }
+    #title {
+        height: 0 auto;
+    }
 }  
