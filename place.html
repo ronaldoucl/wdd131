@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ronaldo Campos" />
+    <meta name="description" content="W03 Assignment." />
+    
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-responsive.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <!--Fonts-->
+    <title>Rapa Nui</title>
+    <!--Scripts-->
+    <script src="scripts/place.js" defer></script>
+    <!--Scripts-->
+</head>
+<body>
+    <header>
+        <h1>Rapa Nui</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/rapa-nui-larger.webp" media="(min-width: 1000px)">
+                <img src="images/rapa-nui-small.webp" alt="Rapa Nui">
+            </picture>
+        </div>
+        <section class="data">
+            <h2>Data</h2>
+            <div>
+                <p><strong>Area: </strong> <span>163.6 km²</span></p>
+                <p><strong>Population: </strong> <span>7,750 (2017 census)</span></p>
+                <p><strong>Capital: </strong> <span>Hanga Roa</span></p>
+                <p><strong>Languages: </strong> <span>Spanish, Rapa Nui</span></p>
+                <p><strong>Currency: </strong> <span>Chilean Peso (CLP)</span></p>
+                <p><strong>Time Zone: </strong> <span>GMT-6</span></p>
+                <p><strong>Calling Code: </strong> <span>+56</span></p>
+                <p><strong>Internet TLD: </strong> <span>.cl</span></p>
+            </div>
+        </section>
+
+        <section class="weather">
+            <div class="weather-title">
+                <h2>Weather</h2>
+                <img src="images/weather_icon.svg" alt="weather icon">
+            </div>
+            <div>
+                <p><b>Temperature:</b> <span id="temperature"></span> </p>
+                <p><b>Conditions:</b> <span id="condition"></span></p>
+                <p><b>Wind:</b> <span id="windspeed"></span></p>
+                <p><b>Wind Chill:</b> <span id="windchill"></span></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p>&copy;<span id="currentyear"></span> Ronaldo Campos </p>
+            <p>🗿 Rapa Nui, Chile 🗿</p>
+        </div>
+        <p id="lastModified"></p>
+    </footer>
+    <!--Scripts-->
+    <script src="scripts/getdates.js"></script>
+    <!--Scripts-->
+</body>
+</html>
