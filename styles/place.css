@@ -30,14 +30,15 @@
 header {
     background-color: var(--color-sand-gold);
     color: #000;
-    padding-bottom: 1rem;
+    padding-bottom: 16px;
 }
 
 header h1 {
     background-color: var(--color-action-red);
-    padding: 2rem;
+    color: var(--color-coral-white);
+    padding: 32px 0px;
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 30px;
 }
 
 /*Main section */
@@ -53,6 +54,7 @@ picture img {
     width: 100%;
     height: auto;
 }
+
 
 .weather-title {
     text-align: center;
