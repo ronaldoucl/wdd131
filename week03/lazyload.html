@@ -22,6 +22,18 @@
         <p>&copy;<span id="currentyear"></span> Ronaldo Campos, Costa Rica</p>
         <p id="lastModified"></p>
     </footer>
+    <script>
+        let names = ['Nancy','Blessing','Jorge','Svetlana','Bob'];
+        console.log(names);
+
+        let namesB = names.filter(name => name.charAt(0) === 'B');
+        console.log(namesB);
+
+        let nameLengths = names.map((name) => name.length);
+        console.log(nameLengths);
+
+        console.log(names.reduce((total, name) => total + name.length, 0)); 
+    </script>
     <script src="../scripts/getdates.js"></script>
 </body>
 </html>
