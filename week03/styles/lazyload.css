@@ -1,0 +1,15 @@
+img {
+    display: block;
+    margin-bottom: 100px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
