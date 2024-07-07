@@ -1,0 +1,152 @@
+/*Global*/
+:root {
+    --almost-black-blue: #000033;
+    --dark-blue: #003366; 
+    --yellow: #FFCC00; 
+    --light-blue: #336699; 
+    --soft-yellow: #FFF9C4;
+    --light-cyan: #e0f3ff;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--light-cyan);
+}
+
+/* Header*/
+
+header {
+    background-color: var(--dark-blue);
+    padding: 10px;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 40px;
+    font-family: "Puppins", sans-serif;
+    color: var(--soft-yellow);
+}
+
+#icon {
+    position: absolute;
+    top: 12px;
+    right: 30px;
+}
+
+#hamburger-symbol,
+#x-symbol{
+    font-family: "Puppins", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#x-symbol{
+    display: none;
+}
+
+/* Navigation */
+
+
+nav {
+    display: none;
+    justify-content: center;
+    align-items: center; 
+}
+
+ul {
+    width: 100%;
+    list-style-type: none;
+}
+
+li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+a {
+    color: var(--soft-yellow);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Roboto Slab", serif;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--yellow);
+}
+
+
+/* Temple Images */
+
+h2 {
+    text-align: center;
+    font-family: "Puppins", sans-serif;
+    margin: 20px;
+}
+
+.figures {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding-bottom: 50px;
+}
+
+figure {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-color: var(--light-blue);
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.2);
+}
+
+.figures figure p {
+    text-align: center;
+    color: var(--light-cyan);
+    font-family: "Roboto Slab", serif;
+}
+
+
+img {
+    width: 100%;
+    height: 80%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 10px;
+}
+
+figure:hover {
+    box-shadow: 3px 3px 8px 4px rgba(0, 0, 0, 0.4);
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+    font-family: "Roboto Slab", serif;
+    font-size: 18px;
+    color: var(--soft-yellow);
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: var(--dark-blue);
+    padding: 20px;
+}
+
+footer p {
+    text-align: center;
+    color: aliceblue;
+    font-family: "Puppins", sans-serif;
+    font-size: 17px;
+    padding: 2px;
+}
+
+#lastModified {
+    color: var(--yellow);
+}
