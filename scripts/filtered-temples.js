@@ -155,7 +155,7 @@ const showTemples = (selectedTemples) => {
     img.alt = temple.location;
     img.loading = "lazy";
     const figcaption = document.createElement("figcaption");
-    figcaption.textContent = temple.location;
+    figcaption.textContent = temple.templeName;
     const location = document.createElement("p");
     location.innerHTML = "<strong>Location: </strong>" + temple.location;
     const dedication = document.createElement("p");
