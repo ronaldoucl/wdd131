@@ -115,22 +115,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
   
   oldTemples.addEventListener("click", () => {
+    document.querySelector('main h2').textContent =  "Old Temples";
     showTemples(temples.filter(temple => parseInt(temple.dedicated.substring(0, 4)) < 1900));
   });
 
   newTemples.addEventListener("click", () => {
+    document.querySelector('main h2').textContent =  "New Temples";
     showTemples(temples.filter(temple => parseInt(temple.dedicated.substring(0, 4)) > 2000));
   });
 
   largeTemples.addEventListener("click", () => {
+    document.querySelector('main h2').textContent =  "Large Temples";
     showTemples(temples.filter(temple => temple.area > 90000));
   });
 
   smallTemples.addEventListener("click", () => {
+    document.querySelector('main h2').textContent =  "Small Temples";
     showTemples(temples.filter(temple => temple.area < 10000));
   });
 
   homeTemples.addEventListener("click", () => {
+    document.querySelector('main h2').textContent =  "Home";
     showTemples(temples);
   });
 });
