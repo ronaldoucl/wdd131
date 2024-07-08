@@ -21,9 +21,10 @@
     .figures {
         grid-template-columns: 1fr 1fr;
     }
+
 }
   
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1300px) {
     .figures {
         width: 80%;
         margin: 0 auto;
