@@ -3,9 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="WDD 131 - W05 Assignment: Product Review Form.">
+    <meta name="author" content="Ronaldo Campos Lucas">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <!--Fonts-->
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/getdates.js" defer></script>
+    <title>Product Review Form</title>
 </head>
 <body>
-    <h1>Hola Mundo form</h1>
+    <main>
+        <h1>Product Review</h1>
+        <form method="get" action="review.html">
+            <fieldset>
+                <label for="productName">Product Name</label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <label for="rating">Overall Rating</label>
+                <div id="rating">
+                    <input type="radio" id="star1" name="rating" value="1" required><label for="star1">★</label>
+                    <input type="radio" id="star2" name="rating" value="2"><label for="star2">★★</label>
+                    <input type="radio" id="star3" name="rating" value="3"><label for="star3">★★★</label>
+                    <input type="radio" id="star4" name="rating" value="4"><label for="star4">★★★★</label>
+                    <input type="radio" id="star5" name="rating" value="5"><label for="star5">★★★★★</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <label for="dateInstalled">Date of Installation</label>
+                <input type="date" id="dateInstalled" name="dateInstalled" required>
+            </fieldset>
+
+            <fieldset>
+                <label>Which features did you find useful in the product?</label>
+                <p>(Check all that apply)</p>
+                <div>
+                    <input type="checkbox" id="durability" name="features" value="Durability"><label for="durability">Durability</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="easeOfUse" name="features" value="Ease of Use"><label for="easeOfUse">Ease of Use</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="performance" name="features" value="Performance"><label for="performance">Performance</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="design" name="features" value="Design"><label for="design">Design</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <label for="writtenReview">Written Review (Optional)</label>
+                <textarea id="writtenReview" name="writtenReview"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <label for="userName">Your Name (Optional)</label>
+                <input type="text" id="userName" name="userName">
+            </fieldset>
+
+            <fieldset>
+                <input type="submit" value="Post Review">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Ronaldo Campos, Costa Rica</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
