@@ -98,3 +98,22 @@ footer p {
 #lastModified {
   color: var(--yellow);
 }
+
+
+/* Review */
+
+.review {
+  background-color: var(--light-blue);
+  color: var(--soft-yellow);
+  text-align: center;
+  font-size: 30px;
+}
+
+.review p {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+#reviewCounter {
+  font-weight: bold
+}
