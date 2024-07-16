@@ -1,52 +1,100 @@
 /*Global*/
 :root {
-    --almost-black-blue: #000033;
-    --dark-blue: #003366; 
-    --yellow: #FFCC00; 
-    --light-blue: #336699; 
-    --soft-yellow: #FFF9C4;
-    --light-cyan: #e0f3ff;
+  --almost-black-blue: #000033;
+  --dark-blue: #003366;
+  --yellow: #ffcc00;
+  --light-blue: #336699;
+  --soft-yellow: #fff9c4;
+  --light-cyan: #e0f3ff;
 }
 
 h1 {
-    text-align: center;
-    background-color: var(--dark-blue);
-    padding: 20px;
-    font-family: "Puppins", sans-serif;
-    color: var(--yellow);
+  text-align: center;
+  background-color: var(--dark-blue);
+  padding: 20px;
+  font-family: "Puppins", sans-serif;
+  color: var(--yellow);
 }
 
-main {
-    width: 30%;
-    margin: 0 auto;
-    background-color: #e0f3ff;
-    font-family: "Roboto Slab", serif;
-    padding: 5px;
+body {
+  width: 30%;
+  margin: 0 auto;
+
+  font-family: "Roboto Slab", serif;
+  padding: 5px;
+}
+
+form {
+  background-color: #e0f3ff;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--almost-black-blue);
+  margin-bottom: 15px;
 }
 
 fieldset {
-    text-align: center;
-    margin: 10px;
+  text-align: center;
+  margin: 10px;
 }
 
-select, #dateInstalled, textarea, #userName {
-    display: block;
-    margin: 0 auto;
+select,
+#dateInstalled,
+textarea,
+#userName {
+  display: block;
+  margin: 0 auto;
+}
+
+textarea {
+  width: 70%;
+  height: 150px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#userName {
+  width: 55%;
+  height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#submit {
+  background-color: var(--dark-blue);
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#submit:hover {
+  background-color: #002244;
+  transform: scale(1.05);
+}
+
+#submit:active {
+  background-color: #001122;
+  transform: scale(0.95);
 }
 
 footer {
-    background-color: var(--dark-blue);
-    padding: 20px;
+  background-color: var(--dark-blue);
+  padding: 10px;
 }
 
 footer p {
-    text-align: center;
-    color: aliceblue;
-    font-family: "Puppins", sans-serif;
-    font-size: 17px;
-    padding: 2px;
+  text-align: center;
+  color: aliceblue;
+  font-family: "Puppins", sans-serif;
+  font-size: 17px;
+  padding: 2px;
 }
 
 #lastModified {
-    color: var(--yellow);
+  color: var(--yellow);
 }
