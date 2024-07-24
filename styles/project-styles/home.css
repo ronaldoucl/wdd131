@@ -291,6 +291,16 @@ fieldset button:hover {
 
 /* PRODUCT LIST */
 
+.cart {
+    position: absolute;
+    font-family: var(--amaranth-font);
+    font-size: 15px;
+    color: var(--accent-color);
+    top: 150px;
+    left: 100px;
+    cursor: pointer;
+}
+
 .main-product-list {
     display: block;
     margin: 20px auto;
@@ -355,4 +365,48 @@ fieldset button:hover {
     font-size: 15px;
     margin-bottom: 10px;
     color: var(--secondary-color);
+    cursor: pointer;
+}
+
+
+/* MY CART */
+
+#my-products {
+    display: block;
+    width: 800px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+
+.empty-message {
+    text-align: center;
+    margin: 40px;
+    padding: 100px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: var(--carlito-font);
+}
+
+.article {
+    display: flex;
+    width: 100%;
+    border: 1px solid blue;
+    align-items: center;
+    font-size: 40px;
+    margin: 20px;
+    font-family: var(--carlito-font);
+    background-color: var(--primary-color);
+    border-radius: 3px;
+}
+
+.article h3 {
+    margin: 20px;
+}
+
+
+.article img {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 3px;
 }

@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <script src="../scripts/project-scripts/list-products.js" defer></script>
+    <script src="../scripts/project-scripts/cart.js" defer></script>
     <script src="../scripts/project-scripts/general.js"></script>
     <title>Product List</title>
 </head>
@@ -32,10 +33,18 @@
             <ul>
                 <li><a href="home.html" id="home">Home</a></li>
                 <li><a href="list-products.html" id="old">Product List</a></li>
+                <li><a href="my-cart.html" id="new">My Cart</a></li>
                 <li><a href="contact-us.html" id="new">Contact US</a></li>
             </ul>
         </nav>
     </header>
+    <div class="cart">
+        <img src="../images/project-images/cart.png" alt="cart">
+        <span id="amount-products"></span>
+    </div>
+    <div id="products-added">
+
+    </div>
     <main class="main-product-list">
         <h1 class="product-list-title">Product List</h1>
         <div id="cards">

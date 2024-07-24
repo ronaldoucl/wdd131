@@ -29,3 +29,4 @@ function printCards() {
         grid.appendChild(box);
     });
 }
+
