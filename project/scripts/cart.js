@@ -9,11 +9,12 @@ function activateButtons() {
         button.addEventListener('click', function(event) {
             console.log(event.target.parentElement.className);
             let parentDiv = event.target.parentElement; 
+            let image = parentDiv.querySelector('img').src.split('/');
 
             let productInfo = {
                 title: parentDiv.querySelector('h3').textContent,  
                 price: parentDiv.querySelector('h4').textContent,  
-                imagePath: parentDiv.querySelector('img').src.split('/')[6]     
+                imagePath: image[image.length - 1]     
             };
 
             cartList.push(productInfo);
