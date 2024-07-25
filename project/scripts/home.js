@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function updateBackgroundImage(index) {
         const section = document.querySelector('.background-images');
-        section.style.backgroundImage = `url('../images/project-images/${images[index]}')`;
+        section.style.backgroundImage = `url('images/${images[index]}')`;
     }
 
     updateBackgroundImage(currentIndex);
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const box = document.createElement('div');
         box.className = 'feature-box';
         box.innerHTML = `
-            <img src="../images/project-images/${feature.image}" alt="${feature.title}">
+            <img src="images/${feature.image}" alt="${feature.title}">
             <h3>${feature.title}</h3>
             <p>${feature.text}</p>
         `;

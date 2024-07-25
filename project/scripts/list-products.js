@@ -22,7 +22,7 @@ function printCards() {
         box.className = 'card';
         box.innerHTML = `
             <h3>${glass.name}</h3>
-            <img src="../images/project-images/glasses/${glass.image}" alt="${glass.name} loading='lazy'">
+            <img src="images/glasses/${glass.image}" alt="${glass.name} loading='lazy'">
             <h4>${glass.price}</h4>
             <button class='card-button'>Add to Cart</button>
         `;

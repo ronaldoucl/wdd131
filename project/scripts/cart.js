@@ -7,7 +7,6 @@ function activateButtons() {
     let cartList = JSON.parse(localStorage.getItem("productData")) || [];
     document.querySelectorAll('.card-button').forEach(button => {
         button.addEventListener('click', function(event) {
-            console.log("El boton funciona");
             console.log(event.target.parentElement.className);
             let parentDiv = event.target.parentElement; 
 
@@ -20,7 +19,7 @@ function activateButtons() {
             cartList.push(productInfo);
 
             localStorage.setItem('productData', JSON.stringify(cartList));
-
+            alert("Product added to the cart");
             console.log('Product added to localStorage');
         });
     });

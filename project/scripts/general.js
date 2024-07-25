@@ -19,6 +19,10 @@ document.addEventListener('DOMContentLoaded', function() {
         hamburger.style.display = "block";
         }
     });
+
+    document.getElementById('logo').addEventListener('click', function() {
+        window.location.href = "home.html";
+    })
 });
 
 

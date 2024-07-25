@@ -14,7 +14,7 @@ function printProducts() {
         const article = document.createElement('article');
         article.className = 'article';
         article.innerHTML = `
-            <img src="../images/project-images/glasses/${product["imagePath"]}" alt="${product["title"]} loading='lazy'">
+            <img src="images/glasses/${product["imagePath"]}" alt="${product["title"]} loading='lazy'">
             <div>
                 <h3>${product["title"]}</h3>
                 <h3>${product["price"]}</h3>
