@@ -131,7 +131,6 @@ h2 {
     margin: 20px auto;
     padding: 20px;
     background-color: var(--background-color);
-    
 }
 
 .services-grid {
@@ -204,6 +203,7 @@ footer p {
 .container {
     display: block;
     width: 50%;
+    height: 650px;
     margin: 0 auto;
 }
 form {
@@ -390,7 +390,6 @@ fieldset button:hover {
 .article {
     display: flex;
     width: 100%;
-    border: 1px solid blue;
     align-items: center;
     font-size: 40px;
     margin: 20px;

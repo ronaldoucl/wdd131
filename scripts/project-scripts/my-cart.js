@@ -24,6 +24,7 @@ function printProducts() {
         });
         const h2 = document.createElement("h2");
         h2.textContent = "Total: $" + total;
+        h2.className = "total-amount";
         myProducts.appendChild(h2);
     } else {
         let p = document.createElement("p");
