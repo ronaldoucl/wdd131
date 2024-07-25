@@ -8,7 +8,7 @@
     --green-button: #30c403;
 }
 
-@media (min-width: 600px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     header {
         padding: 10px;
     }
@@ -78,6 +78,11 @@
     .total-amount {
         margin-top: 15px;
         font-size: 45px;
+    }
+
+    .empty-message {
+        padding: 100px;
+        margin-bottom: 250px;
     }
 
     /* Contact Us */

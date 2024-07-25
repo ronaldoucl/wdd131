@@ -79,6 +79,10 @@ h1 {
     background-position: center;
 }
 
+.small-background {
+    display: none;
+}
+
 .background-images button {
     position: absolute;
     top: 50%;
